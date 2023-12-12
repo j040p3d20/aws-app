@@ -1,0 +1,15 @@
+.MeetingListView {
+    .nav-link {
+        // &::before {
+        //     content: '\F51A';
+        //     font-family: 'bootstrap-icons';
+        //     padding: 8px;
+        // }
+        // &.active::before {
+        //     content: '\F519';
+        // }
+        &.active {
+            font-weight: bold;
+        }
+    }
+}
