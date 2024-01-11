@@ -50,29 +50,6 @@ export function AttendeeDetailView() {
             return;
         }
 
-        // meetingAttendee.attendee = {
-        //     attendeeId: "94b02892-f70c-7400-9ae4-fe4949f76d7a",
-        //     externalUserId: "64b9d61c0219c420dc3e890a",
-        //     joinToken: "OTRiMDI4OTItZjcwYy03NDAwLTlhZTQtZmU0OTQ5Zjc2ZDdhOjNlYTMzNGI2LThlODItNGNiZi1hZWIyLWUzMDBlNmYzNzI3Yg"
-        // };
-
-        // meetingAttendee.meeting = {
-        //     meetingId: "067d38df-3c48-4f2e-8473-c14a7e4d2713",
-        //     externalMeetingId: "64b9d61c0219c420dc3e890a",
-        //     meetingArn: "arn:aws:chime:us-east-1:283224823756:meeting/067d38df-3c48-4f2e-8473-c14a7e4d2713",
-        //     mediaRegion: "us-east-1",
-        //     mediaPlacement: {
-        //         audioFallbackUrl: "wss://haxrp.m3.ue1.app.chime.aws:443/calls/067d38df-3c48-4f2e-8473-c14a7e4d2713",
-        //         audioHostUrl: "bca1f12d5aa360fd9b3565f299219d3e.k.m3.ue1.app.chime.aws:3478",
-        //         eventIngestionUrl: "https://data.svc.ue1.ingest.chime.aws/v1/client-events",
-        //         screenDataUrl: "wss://bitpw.m3.ue1.app.chime.aws:443/v2/screen/067d38df-3c48-4f2e-8473-c14a7e4d2713",
-        //         screenSharingUrl: "wss://bitpw.m3.ue1.app.chime.aws:443/v2/screen/067d38df-3c48-4f2e-8473-c14a7e4d2713",
-        //         screenViewingUrl: "wss://bitpw.m3.ue1.app.chime.aws:443/ws/connect?passcode=null&viewer_uuid=null&X-BitHub-Call-Id=067d38df-3c48-4f2e-8473-c14a7e4d2713",
-        //         signalingUrl: "wss://signal.m3.ue1.app.chime.aws/control/067d38df-3c48-4f2e-8473-c14a7e4d2713",
-        //         turnControlUrl: "https://2713.cell.us-east-1.meetings.chime.aws/v2/turn_sessions"
-        //     }
-        // };
-
         const logger = new ConsoleLogger('MyLogger', LogLevel.DEBUG);
         const deviceController = new DefaultDeviceController(logger);
         const configuration = new MeetingSessionConfiguration(meetingAttendee.meeting, meetingAttendee.attendee);
